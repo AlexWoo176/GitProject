@@ -1,0 +1,19 @@
+html{
+    background: cornflowerblue;
+}
+h1{
+    color: brown;
+    font-size: 24px;
+    font-family: "Times New Roman";
+
+}
+p{
+    font-size: 16;
+    font-family: "Times New Roman";
+
+}
+.A1 img{
+    hight: 200px;
+    width: 200px;
+    margin-left: 500px;
+}
