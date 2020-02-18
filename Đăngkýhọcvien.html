@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký học viên</title>
+    <style>
+        .main{
+            margin: auto;
+            width: 630px;
+            height: 410px;
+            border: darkorange 10px solid;
+        }
+        .formHeader{
+            background-color: aqua;
+            height: 25px;
+            font-size: larger;
+        }
+        .body{
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="formHeader"><strong>ĐĂNG KÍ HỌC VIÊN</strong></div>
+    <form action="#" method="get">
+        <div class="body">
+            <table>
+                <tr>
+                    <td>Họ và tên</td>
+                    <td><input type="text" name="txtName" size="50"></td>
+                </tr>
+                <tr>
+                    <td>Ngày sinh</td>
+                    <td><input type="text" name="txtDOB" size="50"></td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td><input type="radio" name="rdSex" value="male"><label>Nam</label><input type="radio" name="rdSex" value="female"><label>Nữ</label></td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td><textarea name="tarAddress" size="100" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Lớp</td>
+                    <td>
+                        <select name="slClass">
+                            <option value="null">--Chọn lớp--</option>
+                            <option value="class1">Học Toán</option>
+                            <option value="class2">Học Văn</option>
+                            <option value="class3">Học Ngoại Ngữ</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="txtHoten" size="30"></td>
+                </tr>
+                <tr>
+                    <td>Điện thoại</td>
+                    <td><input type="text" name="txtHoten" size="30"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="btnSubmit" value="Đăng ký"><input type="reset" name="btnReset" value="Nhập lại"></td>
+                </tr>
+            </table>
+    </form>
+</div>
+</div>
+</body>
+</html>

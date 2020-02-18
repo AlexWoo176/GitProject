@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        container{
+            background-color: aqua;
+            width: 560px;
+            height: 280px;
+            margin: auto;
+        }
+        .Main{
+            display: inline-block;
+            background-color: azure;
+            padding: 10px;
+        }
+        .Body{
+            padding: 10px;
+            background-color: azure;
+            margin: auto;
+        }.Header{
+             background-color: darkgoldenrod;
+             text-align: center;
+             color: azure;
+             height: 50px;
+         }
+        .textHobby{
+            color: darkgoldenrod;
+        }
+        .textLabel{
+            color: blue;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<form action="#" method="get">
+    <div class="Container">
+        <div class="Main">
+            <div class="Body">
+                <div class="Header"><br><strong>SỞ THÍCH CỦA BẠN</strong></div>
+                <div class="Content">
+                    <table>
+                        <tr>
+                            <td class="textLabel">Họ và tên</td>
+                            <td><input type="text" name="txtName" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td class="textLabel">Email</td>
+                            <td><input type="text" name="txtEmail" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td class="textLabel">Sở thích</td>
+                            <td class="textHobby">
+                                <table border="0">
+                                    <tr>
+                                        <td><input type="checkbox" name="ckbHobby" size="30" value="thethao"><label>Thể thao</label></td>
+                                        <td> <input type="checkbox" name="ckbHobby" size="30" value="amnhac"><label>Âm nhạc</label></td>
+                                        <td> <input type="checkbox" name="ckbHobby" size="30" value="docsach"><label>Đọc sách</label><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td> <input type="checkbox" name="ckbHobby" size="30" value="luotweb"><label>Lướt Web</label></td>
+                                        <td><input type="checkbox" name="ckbHobby" size="30" value="choigame"><label>Chơi game</label></td>
+                                        <td><input type="checkbox" name="ckbHobby" size="30" value="dienanh"><label>Điện ảnh</label><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="ckbHobbies" size="30" value="dulich"><label>Du lịch</label></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" name="btnSubmit" value="Gửi thông tin">
+                                <input type="reset" name="btnReset" value="Nhập lại">
+                            </td>
+                        </tr>
+                    </table>
+                    <div>
+                    </div>
+                </div>
+            </div>
+</form>
+</body>
+</html>
