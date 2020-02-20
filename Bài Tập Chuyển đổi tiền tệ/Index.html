@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="doiTien.js"></script>
+</head>
+<body>
+<form>
+    <table style="width:800px; text-align: center" >
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td style="width:60px"><input type="text" id="amount"></td>
+            <td ><select name="currency" id="from">
+                <option value="Vietnam" selected>Vietnam</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="EUR">EUR</option>
+            </select></td>
+            <td><select name="currency" id="to">
+                <option value="Vietnam">Vietnam</option>
+                <option value="USD" selected>USD</option>
+                <option value="GBP">GBP</option>
+                <option value="EUR">EUR</option>
+            </select></td>
+            <td><b><input type="button" onclick="convert()" value="Convert"></b></td>
+        </tr>
+        <tr>
+            <td style="text-align: left" colspan="4">Result: <span id="result" style="color: blue; width: 60px"></span>
+                <span style="color: blue" id="result-country"></span></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
