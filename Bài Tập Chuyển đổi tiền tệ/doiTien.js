@@ -7,20 +7,24 @@ function convert() {
     if(from=='Vietnam'){
         fromvalue=1;}
     else if (from=='USD'){
-        fromvalue=23000;}
+        fromvalue=23160;}
     else if (from=='GBP'){
-        fromvalue=29000;}
-    else {fromvalue=25000;}
+        fromvalue=29483;}
+    else if (from=='EUR'){
+        fromvalue=24780;}
+    else {fromvalue=17242;}
 
     if(to=='Vietnam'){
         tovalue=1;}
     else if (to=='USD'){
-        parseInt(tovalue=23000);}
+        parseInt(tovalue=23160);}
     else if (to=='GBP'){
-        tovalue=29000;}
-    else {tovalue=25000;}
+        tovalue=29483;}
+    else if (to=='EUR'){
+        tovalue=24780;}
+    else {tovalue=17242;}
 
-    let ketqua=amount*fromvalue/tovalue;
+    let ketqua=Math.round(parseInt(amount*fromvalue/tovalue));
 
     document.getElementById("result").innerHTML = ketqua;
     document.getElementById("result-country").innerHTML = to;
