@@ -24,7 +24,7 @@ function convert() {
         tovalue=24780;}
     else {tovalue=17242;}
 
-    let ketqua=Math.round(parseInt(amount*fromvalue/tovalue));
+    let ketqua=Math.round(amount*fromvalue/tovalue);
 
     document.getElementById("result").innerHTML = ketqua;
     document.getElementById("result-country").innerHTML = to;
